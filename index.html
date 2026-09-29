@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#dceef0">
+  <meta name="description" content="2026년 10월 9일부터 11일까지, 우리 가족의 수원 여행 일정">
+  <title>수원 가족여행 · 10월 9–11일</title>
+  <style>
+    :root { color-scheme: light; --ink:#18333b; --muted:#667b80; --line:#e4eae6; --coral:#fa735e; --mint:#dceef0; --paper:#fbfaf6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; -webkit-font-smoothing:antialiased; }
+    button,a { -webkit-tap-highlight-color:transparent; }
+    a { color:inherit; }
+    .wrap { width:min(100%,760px); margin:auto; }
+    .hero { position:relative; overflow:hidden; background:linear-gradient(145deg,#dbf1ef 0%,#d7e9f5 62%,#e8e7fa 100%); min-height:355px; }
+    .hero::before { content:""; position:absolute; width:230px; height:230px; border-radius:50%; background:#fff8d8; opacity:.8; right:-64px; top:-64px; }
+    .hero-inner { position:relative; padding:48px 24px 0; }
+    .eyebrow { display:inline-flex; align-items:center; gap:7px; margin:0 0 15px; font-size:12px; font-weight:800; letter-spacing:.14em; color:#4b7d80; }
+    .eyebrow::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--coral); }
+    h1 { margin:0; font-size:clamp(39px,8vw,60px); line-height:1.13; letter-spacing:-.075em; font-weight:850; }
+    .hero-sub { margin:16px 0 18px; font-size:16px; line-height:1.55; color:#3e6169; }
+    .date-chip { display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(47,106,111,.18); border-radius:100px; background:rgba(255,255,255,.7); padding:10px 14px; font-size:13px; font-weight:750; box-shadow:0 5px 18px rgba(70,110,113,.08); }
+    .scene { display:block; width:100%; height:auto; margin-top:-32px; position:relative; }
+    main { padding:0 18px 60px; }
+    .tabbar { position:sticky; top:0; z-index:10; display:grid; grid-template-columns:repeat(3,1fr); gap:5px; margin:-1px 0 29px; padding:8px; background:rgba(251,250,246,.94); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-radius:0 0 20px 20px; box-shadow:0 8px 25px rgba(29,68,72,.06); }
+    .tab { min-height:48px; border:0; border-radius:14px; background:transparent; color:#70858a; font:inherit; font-size:14px; font-weight:750; cursor:pointer; }
+    .tab[aria-selected="true"] { background:var(--ink); color:white; box-shadow:0 5px 12px rgba(24,51,59,.16); }
+    .tab:focus-visible, a:focus-visible { outline:3px solid var(--coral); outline-offset:3px; }
+    [hidden] { display:none !important; }
+    .day-head { padding:0 6px; margin-bottom:24px; }
+    .day-kicker { margin:0 0 8px; color:#df6a57; font-size:12px; font-weight:850; letter-spacing:.12em; }
+    h2 { margin:0; font-size:clamp(26px,6vw,34px); line-height:1.25; letter-spacing:-.055em; }
+    .day-desc { margin:10px 0 0; color:var(--muted); font-size:14px; line-height:1.6; }
+    .timeline { position:relative; margin:0; padding:0; list-style:none; }
+    .timeline::before { content:""; position:absolute; top:30px; bottom:38px; left:30px; width:2px; background:#dce8e4; }
+    .stop { position:relative; display:grid; grid-template-columns:60px minmax(0,1fr); gap:12px; margin-bottom:14px; }
+    .icon { width:60px; height:60px; display:grid; place-items:center; border-radius:18px; font-size:27px; background:#e8f4ef; position:relative; z-index:1; box-shadow:0 0 0 5px var(--paper); }
+    .stop:nth-child(3n + 2) .icon { background:#fff0de; }
+    .stop:nth-child(3n) .icon { background:#eeeaf8; }
+    .stop-card { min-width:0; padding:16px 17px 17px; background:#fff; border:1px solid #edf0ec; border-radius:20px; box-shadow:0 6px 20px rgba(33,65,67,.035); }
+    .time { display:block; color:#df6a57; font-size:12px; font-weight:850; letter-spacing:.03em; margin-bottom:5px; }
+    h3 { margin:0; font-size:17px; letter-spacing:-.035em; line-height:1.45; }
+    .details { margin:8px 0 0; padding:0; list-style:none; color:#61777c; font-size:13px; line-height:1.65; }
+    .details li + li { margin-top:2px; }
+    .details li::before { content:"·"; margin-right:6px; color:#e98770; font-weight:900; }
+    .badge { display:inline-block; margin-top:9px; padding:5px 8px; border-radius:7px; background:#eaf6ea; color:#397046; font-size:11px; font-weight:800; }
+    .map-link { display:inline-flex; align-items:center; gap:4px; margin-top:10px; font-size:12px; font-weight:750; color:#307c82; text-decoration:none; border-bottom:1px solid #b2d5d3; padding-bottom:2px; }
+    .map-link::after { content:"↗"; }
+    .note { display:flex; align-items:flex-start; gap:10px; margin:22px 0 28px 72px; padding:14px 15px; border-radius:15px; background:#fff2e7; color:#805d48; font-size:12px; line-height:1.55; }
+    .note strong { color:#7c503b; }
+    .note-icon { font-size:17px; line-height:1.2; }
+    .stay { margin:40px 0 0; padding:23px; border-radius:24px; background:#e5f1ee; }
+    .stay-top { display:flex; gap:13px; align-items:center; }
+    .stay-icon { flex:none; display:grid; place-items:center; width:45px; height:45px; border-radius:15px; background:#fff; font-size:22px; }
+    .stay-label { margin:0 0 4px; font-size:11px; font-weight:850; color:#4d8581; letter-spacing:.1em; }
+    .stay h2 { font-size:20px; }
+    .stay-address { margin:17px 0 11px; font-size:14px; font-weight:700; line-height:1.5; }
+    .stay-list { display:flex; flex-wrap:wrap; gap:7px; margin:0; padding:0; list-style:none; }
+    .stay-list li { border-radius:9px; padding:7px 9px; background:rgba(255,255,255,.78); font-size:12px; font-weight:650; }
+    .stay .map-link { margin-top:17px; }
+    .empty { text-align:center; padding:58px 20px 68px; border:1px dashed #cadbd6; border-radius:25px; background:linear-gradient(155deg,#f4faf6,#f5f3fb); }
+    .empty-emoji { font-size:55px; line-height:1; margin-bottom:18px; }
+    .empty h3 { font-size:23px; }
+    .empty p { margin:10px 0 0; color:var(--muted); font-size:14px; line-height:1.7; }
+    footer { text-align:center; padding:27px 15px 10px; color:#91a2a2; font-size:11px; }
+    @media (min-width:600px) { .hero-inner { padding:58px 44px 0; } main { padding-left:34px; padding-right:34px; } .scene { margin-top:-82px; } .hero { min-height:380px; } }
+    @media (max-width:360px) { .hero-inner { padding-left:19px; padding-right:19px; } main { padding-left:12px; padding-right:12px; } .stop { grid-template-columns:50px minmax(0,1fr); gap:9px; } .icon { width:50px; height:50px; font-size:23px; } .timeline::before { left:25px; } .note { margin-left:59px; } .stop-card { padding:14px; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">OUR FAMILY TRIP</p>
+      <h1>수원<br>가족여행</h1>
+      <p class="hero-sub">함께 걷고, 맛보고, 오래 기억할<br>우리 가족의 3일</p>
+      <span class="date-chip" aria-label="2026년 10월 9일 금요일부터 11일 일요일까지">🗓️ 2026. 10. 9 금 — 11 일</span>
+    </div>
+    <svg class="scene" viewBox="0 0 760 242" role="img" aria-label="수원 화성과 열기구를 그린 삽화" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 199Q115 180 239 199T520 191T760 195V242H0Z" fill="#b9d7cc"/>
+      <path d="M0 218Q126 197 253 222T508 211T760 215V242H0Z" fill="#90b9ad"/>
+      <g fill="#fff" opacity=".78"><ellipse cx="110" cy="47" rx="28" ry="8"/><ellipse cx="137" cy="43" rx="18" ry="7"/><ellipse cx="570" cy="54" rx="23" ry="7"/><ellipse cx="593" cy="50" rx="16" ry="6"/></g>
+      <g transform="translate(562 15)"><path d="M0 44C-2 18 13 0 36 0s38 18 36 44C70 60 51 80 36 80S2 60 0 44Z" fill="#fb806f"/><path d="M22 3C9 28 12 54 30 77M50 3C63 28 60 54 42 77" stroke="#ffd2aa" stroke-width="10" fill="none"/><path d="M30 80l2 14h9l2-14" stroke="#745e60" stroke-width="2" fill="none"/><path d="M27 93h18l-3 14H30Z" fill="#7c6255"/></g>
+      <g transform="translate(74 104)"><path d="M0 93h516v34H0Z" fill="#a97866"/><path d="M19 78h478v18H19Z" fill="#bf8c70"/><path d="M48 45h420l-26 36H74Z" fill="#364f55"/><path d="M112 23h292l64 24H48Z" fill="#506b68"/><path d="M148 18h220l36 8H112Z" fill="#344c51"/><path d="M212 0h92l24 19H188Z" fill="#49625f"/><path d="M97 81h32v46H97Zm290 0h32v46h-32Z" fill="#715c51"/><path d="M222 68h72v59h-72Z" fill="#d3a485"/><path d="M246 89a12 12 0 0 1 24 0v38h-24Z" fill="#384e50"/><path d="M0 127h516" stroke="#6a8e84" stroke-width="3"/></g>
+      <g fill="#5d8b79"><circle cx="45" cy="191" r="23"/><circle cx="27" cy="201" r="17"/><circle cx="725" cy="193" r="25"/><circle cx="745" cy="203" r="18"/></g>
+    </svg>
+  </header>
+
+  <main class="wrap">
+    <div class="tabbar" role="tablist" aria-label="여행 날짜 선택">
+      <button class="tab" id="tab-1" type="button" role="tab" aria-controls="day-1" aria-selected="true" tabindex="0">1일차 · 금</button>
+      <button class="tab" id="tab-2" type="button" role="tab" aria-controls="day-2" aria-selected="false" tabindex="-1">2일차 · 토</button>
+      <button class="tab" id="tab-3" type="button" role="tab" aria-controls="day-3" aria-selected="false" tabindex="-1">3일차 · 일</button>
+    </div>
+
+    <section id="day-1" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+      <div class="day-head"><p class="day-kicker">DAY 01 · 10월 9일 금요일</p><h2>수원에서의 첫날 ✨</h2><p class="day-desc">하늘 높이 올라가고, 활도 쏘고, 맛있는 저녁까지!</p></div>
+      <ol class="timeline">
+        <li class="stop"><span class="icon" aria-hidden="true">🍲</span><div class="stop-card"><time class="time" datetime="12:00">12:00</time><h3>수원 도착 &amp; 점심</h3><ul class="details"><li>한봉석 할머니 순두부</li><li>또는 조마담칼국수 (팔달시장 근처)</li></ul></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🎈</span><div class="stop-card"><time class="time" datetime="13:30">13:30</time><h3>플라잉수원</h3><ul class="details"><li>열기구 탑승</li></ul><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%ED%94%8C%EB%9D%BC%EC%9E%89%EC%88%98%EC%9B%90" target="_blank" rel="noopener noreferrer" aria-label="플라잉수원 지도 검색, 새 창">지도 보기</a></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🏹</span><div class="stop-card"><time class="time" datetime="14:00">14:00</time><h3>국궁 활쏘기 체험</h3></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">☕</span><div class="stop-card"><time class="time" datetime="14:30">14:30</time><h3>카페에서 쉬어가기</h3><ul class="details"><li>근처 카페에서 휴식</li></ul></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🏛️</span><div class="stop-card"><time class="time" datetime="16:00">16:00</time><h3>수원화성박물관</h3><ul class="details"><li>박물관 관람</li></ul><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%88%98%EC%9B%90%ED%99%94%EC%84%B1%EB%B0%95%EB%AC%BC%EA%B4%80" target="_blank" rel="noopener noreferrer" aria-label="수원화성박물관 지도 검색, 새 창">지도 보기</a></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🍗</span><div class="stop-card"><time class="time" datetime="17:30">17:30</time><h3>저녁 · 수원 통닭거리</h3><ul class="details"><li>저녁식사 후 숙소 이동</li></ul><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%88%98%EC%9B%90+%ED%86%B5%EB%8B%AD%EA%B1%B0%EB%A6%AC" target="_blank" rel="noopener noreferrer" aria-label="수원 통닭거리 지도 검색, 새 창">지도 보기</a></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🎂</span><div class="stop-card"><time class="time" datetime="20:00">20:00</time><h3>숙소에서 생일파티</h3><ul class="details"><li>다 함께 축하하는 시간</li></ul></div></li>
+      </ol>
+      <p class="note"><span class="note-icon" aria-hidden="true">💡</span><span><strong>이동 메모</strong><br>플라잉수원과 활쏘기 체험이 30분 간격이에요. 현장 이동 시간을 확인해 주세요.</span></p>
+    </section>
+
+    <section id="day-2" role="tabpanel" aria-labelledby="tab-2" tabindex="0" hidden>
+      <div class="day-head"><p class="day-kicker">DAY 02 · 10월 10일 토요일</p><h2>화성 따라 느긋하게 🌿</h2><p class="day-desc">행궁을 보고, 골목을 걷고, 밤 공연으로 마무리해요.</p></div>
+      <ol class="timeline">
+        <li class="stop"><span class="icon" aria-hidden="true">🥐</span><div class="stop-card"><span class="time">아침</span><h3>각자 편하게 식사</h3><ul class="details"><li>각 숙소에서 아침 해결</li></ul></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🏯</span><div class="stop-card"><time class="time" datetime="10:00">10:00</time><h3>화성행궁</h3><ul class="details"><li>화성행궁 관람</li><li>문화재 행사 기간의 체험과 볼거리 즐기기</li></ul><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%ED%99%94%EC%84%B1%ED%96%89%EA%B6%81" target="_blank" rel="noopener noreferrer" aria-label="화성행궁 지도 검색, 새 창">지도 보기</a></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🥟</span><div class="stop-card"><time class="time" datetime="12:30">12:30</time><h3>점심 · 포장해서 숙소에서</h3><ul class="details"><li>행궁 주변에서 만두·김밥·햄버거 등 포장</li><li>숙소에서 함께 점심 먹고 휴식</li></ul></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🚶</span><div class="stop-card"><time class="time" datetime="15:00">15:00</time><h3>오후 산책 &amp; 구경</h3><ul class="details"><li>수원화성 · 행리단길</li><li>방화수류정 일대 산책</li></ul><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EB%B0%A9%ED%99%94%EC%88%98%EB%A5%98%EC%A0%95" target="_blank" rel="noopener noreferrer" aria-label="방화수류정 지도 검색, 새 창">지도 보기</a></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🥩</span><div class="stop-card"><time class="time" datetime="18:00">18:00</time><h3>저녁 · 연포갈비</h3><span class="badge">✓ 예약 완료</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%88%98%EC%9B%90+%EC%97%B0%ED%8F%AC%EA%B0%88%EB%B9%84" target="_blank" rel="noopener noreferrer" aria-label="연포갈비 지도 검색, 새 창">지도 보기</a></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🌙</span><div class="stop-card"><time class="time" datetime="20:00">20:00</time><h3>야조 공연</h3><ul class="details"><li>장소: 연무대</li><li>야외 공연이라 겉옷 챙기기</li></ul><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%88%98%EC%9B%90+%EC%97%B0%EB%AC%B4%EB%8C%80" target="_blank" rel="noopener noreferrer" aria-label="연무대 지도 검색, 새 창">지도 보기</a></div></li>
+        <li class="stop"><span class="icon" aria-hidden="true">🏠</span><div class="stop-card"><time class="time" datetime="21:00">21:00</time><h3>숙소 귀가</h3></div></li>
+      </ol>
+    </section>
+
+    <section id="day-3" role="tabpanel" aria-labelledby="tab-3" tabindex="0" hidden>
+      <div class="day-head"><p class="day-kicker">DAY 03 · 10월 11일 일요일</p><h2>마지막 날 ☀️</h2><p class="day-desc">남은 시간은 우리 가족의 마음대로.</p></div>
+      <div class="empty"><div class="empty-emoji" aria-hidden="true">🧳</div><h3>일정 미정</h3><p>셋째 날 일정은 아직 정해지지 않았어요.<br>함께 이야기하고 채워가요!</p></div>
+    </section>
+
+    <aside class="stay" aria-label="숙소 안내">
+      <div class="stay-top"><span class="stay-icon" aria-hidden="true">🛌</span><div><p class="stay-label">OUR STAY</p><h2>우리의 숙소</h2></div></div>
+      <p class="stay-address">📍 수원시 행궁로26번길 38 인근</p>
+      <ul class="stay-list"><li>오빠네 가족 · 에어비앤비 1개</li><li>부모님 + 우리 가족 · 에어비앤비 1개</li></ul>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%88%98%EC%9B%90%EC%8B%9C+%ED%96%89%EA%B6%81%EB%A1%9C26%EB%B2%88%EA%B8%B8+38" target="_blank" rel="noopener noreferrer" aria-label="숙소 인근 주소 지도 검색, 새 창">숙소 인근 지도 보기</a>
+    </aside>
+    <footer>SUWON FAMILY TRIP · OCTOBER 2026</footer>
+  </main>
+
+  <script>
+    const tabs = [...document.querySelectorAll('[role="tab"]')];
+    function showDay(index, focus = false) {
+      tabs.forEach((tab, i) => {
+        const active = i === index;
+        tab.setAttribute('aria-selected', active);
+        tab.tabIndex = active ? 0 : -1;
+        document.getElementById(tab.getAttribute('aria-controls')).hidden = !active;
+      });
+      if (focus) tabs[index].focus();
+    }
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('click', () => showDay(i));
+      tab.addEventListener('keydown', event => {
+        const move = { ArrowRight: 1, ArrowLeft: -1 }[event.key];
+        if (move) { event.preventDefault(); showDay((i + move + tabs.length) % tabs.length, true); }
+      });
+    });
+  </script>
+</body>
+</html>
